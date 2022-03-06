@@ -1,0 +1,108 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://example.com/object1646598666.json",
+    "title": "Root",
+    "type": "object",
+    "required": [
+        "book"
+    ],
+    "properties": {
+        "book": {
+            "$id": "#root/book",
+            "title": "Book",
+            "type": "object",
+            "required": [
+                "isbn",
+                "amazon-url",
+                "author",
+                "language",
+                "pages",
+                "publisher",
+                "title",
+                "year"
+            ],
+            "properties": {
+                "isbn": {
+                    "$id": "#root/book/isbn",
+                    "title": "Isbn",
+                    "type": "string",
+                    "default": "",
+                    "examples": [
+                        "0691161518"
+                    ],
+                    "pattern": "^.*$"
+                },
+                "amazon-url": {
+                    "$id": "#root/book/amazon-url",
+                    "title": "Amazon-url",
+                    "type": "string",
+                    "default": "",
+                    "examples": [
+                        "http://a.co/eobPtX2"
+                    ],
+                    "pattern": "^.*$"
+                },
+                "author": {
+                    "$id": "#root/book/author",
+                    "title": "Author",
+                    "type": "string",
+                    "default": "",
+                    "examples": [
+                        "Matthew Lane"
+                    ],
+                    "pattern": "^.*$"
+                },
+                "language": {
+                    "$id": "#root/book/language",
+                    "title": "Language",
+                    "type": "string",
+                    "default": "",
+                    "examples": [
+                        "english"
+                    ],
+                    "pattern": "^.*$"
+                },
+                "pages": {
+                    "$id": "#root/book/pages",
+                    "title": "Pages",
+                    "type": "integer",
+                    "examples": [
+                        264
+                    ],
+                    "default": 0
+                },
+                "publisher": {
+                    "$id": "#root/book/publisher",
+                    "title": "Publisher",
+                    "type": "string",
+                    "default": "",
+                    "examples": [
+                        "Princeton University Press"
+                    ],
+                    "pattern": "^.*$"
+                },
+                "title": {
+                    "$id": "#root/book/title",
+                    "title": "Title",
+                    "type": "string",
+                    "default": "",
+                    "examples": [
+                        "Power-Up: Unlocking Hidden Math in Video Games"
+                    ],
+                    "pattern": "^.*$"
+                },
+                "year": {
+                    "$id": "#root/book/year",
+                    "title": "Year",
+                    "type": "integer",
+                    "examples": [
+                        2017
+                    ],
+                    "default": 0
+                }
+            }
+        }
+
+    }
+}
